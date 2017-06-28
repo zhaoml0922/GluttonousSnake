@@ -16,6 +16,9 @@
 		B17FDD281EFCFFAE00186B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17FDD261EFCFFAE00186B34 /* LaunchScreen.storyboard */; };
 		B17FDD331EFCFFAE00186B34 /* tanchisheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B17FDD321EFCFFAE00186B34 /* tanchisheTests.m */; };
 		B17FDD3E1EFCFFAE00186B34 /* tanchisheUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B17FDD3D1EFCFFAE00186B34 /* tanchisheUITests.m */; };
+		B17FDD4D1EFCFFEF00186B34 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17FDD4C1EFCFFEF00186B34 /* GameViewController.m */; };
+		B17FDD541EFD289A00186B34 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17FDD531EFD289A00186B34 /* CoreMotion.framework */; };
+		B18DB4BF1F00D8EA00679A5D /* StopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B18DB4BE1F00D8EA00679A5D /* StopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		B17FDD391EFCFFAE00186B34 /* tanchisheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tanchisheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17FDD3D1EFCFFAE00186B34 /* tanchisheUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tanchisheUITests.m; sourceTree = "<group>"; };
 		B17FDD3F1EFCFFAE00186B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17FDD4B1EFCFFEF00186B34 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		B17FDD4C1EFCFFEF00186B34 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		B17FDD4E1EFD003200186B34 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B17FDD531EFD289A00186B34 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B18DB4BD1F00D8EA00679A5D /* StopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopView.h; sourceTree = "<group>"; };
+		B18DB4BE1F00D8EA00679A5D /* StopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17FDD541EFD289A00186B34 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +97,7 @@
 				B17FDD311EFCFFAE00186B34 /* tanchisheTests */,
 				B17FDD3C1EFCFFAE00186B34 /* tanchisheUITests */,
 				B17FDD131EFCFFAE00186B34 /* Products */,
+				B17FDD521EFD289A00186B34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +118,11 @@
 				B17FDD191EFCFFAE00186B34 /* AppDelegate.m */,
 				B17FDD1B1EFCFFAE00186B34 /* ViewController.h */,
 				B17FDD1C1EFCFFAE00186B34 /* ViewController.m */,
+				B17FDD4B1EFCFFEF00186B34 /* GameViewController.h */,
+				B17FDD4C1EFCFFEF00186B34 /* GameViewController.m */,
+				B18DB4BD1F00D8EA00679A5D /* StopView.h */,
+				B18DB4BE1F00D8EA00679A5D /* StopView.m */,
+				B17FDD4E1EFD003200186B34 /* PrefixHeader.pch */,
 				B17FDD1E1EFCFFAE00186B34 /* Main.storyboard */,
 				B17FDD241EFCFFAE00186B34 /* Assets.xcassets */,
 				B17FDD261EFCFFAE00186B34 /* LaunchScreen.storyboard */,
@@ -141,6 +157,14 @@
 				B17FDD3F1EFCFFAE00186B34 /* Info.plist */,
 			);
 			path = tanchisheUITests;
+			sourceTree = "<group>";
+		};
+		B17FDD521EFD289A00186B34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B17FDD531EFD289A00186B34 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +234,7 @@
 				TargetAttributes = {
 					B17FDD111EFCFFAE00186B34 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 458ECPNL4V;
 						ProvisioningStyle = Automatic;
 					};
 					B17FDD2D1EFCFFAE00186B34 = {
@@ -276,9 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17FDD4D1EFCFFEF00186B34 /* GameViewController.m in Sources */,
 				B17FDD1D1EFCFFAE00186B34 /* ViewController.m in Sources */,
 				B17FDD231EFCFFAE00186B34 /* tanchishe.xcdatamodeld in Sources */,
 				B17FDD1A1EFCFFAE00186B34 /* AppDelegate.m in Sources */,
+				B18DB4BF1F00D8EA00679A5D /* StopView.m in Sources */,
 				B17FDD171EFCFFAE00186B34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,9 +455,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 458ECPNL4V;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/tanchishe/PrefixHeader.pch";
 				INFOPLIST_FILE = tanchishe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dididoctor.doctor.tanchishe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.galaxyinternet.galaxystars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -439,9 +469,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 458ECPNL4V;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/tanchishe/PrefixHeader.pch";
 				INFOPLIST_FILE = tanchishe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dididoctor.doctor.tanchishe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.galaxyinternet.galaxystars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -511,6 +544,7 @@
 				B17FDD441EFCFFAE00186B34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B17FDD451EFCFFAE00186B34 /* Build configuration list for PBXNativeTarget "tanchisheTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +553,7 @@
 				B17FDD471EFCFFAE00186B34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B17FDD481EFCFFAE00186B34 /* Build configuration list for PBXNativeTarget "tanchisheUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +562,7 @@
 				B17FDD4A1EFCFFAE00186B34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
